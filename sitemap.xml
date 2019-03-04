@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.xiewenqi.com/2019/03/04/解决zTree异步加载使用isParent出现undefind节点的问题/</loc>
+    
+    <lastmod>2019-03-04T09:55:32.295Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.xiewenqi.com/about/index.html</loc>
     
     <lastmod>2019-01-31T02:09:02.320Z</lastmod>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="js,zTree,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="尽我所能，爱我所爱">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="重点在于 dataFilter&amp;emsp;&amp;emsp;没错，就是ztree里面的setting.async.dataFilter属性。dataFilter是个函数，官方文档解释是异步加载得到的数据的预处理函数。实际上它的作用是：当异步加载开启时，dataFilter这个函数return的内容会自动追加到触发异步加载的父节点上，如果return的值为null，则追加一个undefind节点上去。如果">
+<meta name="keywords" content="js,zTree">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决zTree异步加载使用isParent出现undefind节点的问题">
+<meta property="og:url" content="http://yoursite.com/2019/03/04/解决zTree异步加载使用isParent出现undefind节点的问题/index.html">
 <meta property="og:site_name" content="OnceGoBlack">
-<meta property="og:description" content="尽我所能，爱我所爱">
+<meta property="og:description" content="重点在于 dataFilter&amp;emsp;&amp;emsp;没错，就是ztree里面的setting.async.dataFilter属性。dataFilter是个函数，官方文档解释是异步加载得到的数据的预处理函数。实际上它的作用是：当异步加载开启时，dataFilter这个函数return的内容会自动追加到触发异步加载的父节点上，如果return的值为null，则追加一个undefind节点上去。如果">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-09T09:28:00.400Z">
+<meta property="og:updated_time" content="2019-03-04T09:55:32.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="尽我所能，爱我所爱">
+<meta name="twitter:title" content="解决zTree异步加载使用isParent出现undefind节点的问题">
+<meta name="twitter:description" content="重点在于 dataFilter&amp;emsp;&amp;emsp;没错，就是ztree里面的setting.async.dataFilter属性。dataFilter是个函数，官方文档解释是异步加载得到的数据的预处理函数。实际上它的作用是：当异步加载开启时，dataFilter这个函数return的内容会自动追加到触发异步加载的父节点上，如果return的值为null，则追加一个undefind节点上去。如果">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/04/解决zTree异步加载使用isParent出现undefind节点的问题/">
 
 
 
 
 
-  <title>分类 | OnceGoBlack</title>
+  <title>解决zTree异步加载使用isParent出现undefind节点的问题 | OnceGoBlack</title>
   
 
 
@@ -250,40 +251,181 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/04/解决zTree异步加载使用isParent出现undefind节点的问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="XWQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnceGoBlack">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/工作/">工作</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">解决zTree异步加载使用isParent出现undefind节点的问题</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-04T17:02:36+08:00">
+                2019-03-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/" itemprop="url" rel="index">
+                    <span itemprop="name">工作</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="重点在于-dataFilter"><a href="#重点在于-dataFilter" class="headerlink" title="重点在于 dataFilter"></a>重点在于 <strong>dataFilter</strong></h2><p>&emsp;&emsp;没错，就是ztree里面的setting.async.dataFilter属性。dataFilter是个函数，官方文档解释是异步加载得到的数据的预处理函数。实际上它的作用是：当异步加载开启时，dataFilter这个函数return的内容会自动追加到触发异步加载的父节点上，如果return的值为null，则追加一个undefind节点上去。如果不配置dataFilter，则默认return null！这就是出现undefind节点的原因！<a id="more"></a></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>&emsp;&emsp;那么要把undefind节点去掉的话应该怎么办呢？有两种处理方法：</p>
+<ol>
+<li>如果异步请求成功是可以拿到数据的，也就是说父节点中是有内容的，那么return异步请求得到的数据。</li>
+<li>如果父节点中是没有内容的，那么直接在dataFilter中返回一个空字符串就好了：<strong>return “”</strong>。</li>
+</ol>
+<h2 id="zTree的异步加载"><a href="#zTree的异步加载" class="headerlink" title="zTree的异步加载"></a>zTree的异步加载</h2><p>&emsp;&emsp;工作原因，要使用zTree，并且需要使用异步加载，因为对前端不太熟悉的原因折腾了很久，现在发现其实zTree的异步加载超级简单，简直到了傻瓜式的程度。<br>&emsp;&emsp;首先，zTree的异步加载设置我认为有三个属性是必填的：第一个：<strong>enable</strong>，设置是否打开异步加载。第二个：<strong>url</strong>，异步加载请求的地址。第三个：<strong>dataFilter，控制加载！</strong><br>&emsp;&emsp;dataFilter有三个参数，分别是：</p>
+<ol>
+<li>treeId：对应 zTree 的 treeId，便于用户操控。</li>
+<li>parentNode：进行异步加载的父节点 JSON 数据对象。</li>
+<li>responseData：异步请求的响应数据，而且是<strong>处理过的！json格式的！zTree可以直接使用的！</strong>假如响应数据中有一个deptList，存放的是子节点列表，那么<strong>return responseData.deptList</strong>，zTree就会自动把这个列表追加到它们的父节点上，这样就完成了异步加载！就是这么简单。</li>
+</ol>
+<p>&emsp;&emsp;我折腾了很久的主要原因其实是我之前一直在关注<strong>onAsyncSuccess</strong>这个方法，第一眼看到这个方法就感觉异步加载应该要在这里面做，请求成功后调用一些追加节点的方法之类的。然而<strong>这个方法的意思是异步加载成功，而不是异步请求成功</strong>。也就是说进入这个方法时，异步加载操作是已经完成了的。它和<strong>beforeAsync</strong>方法性质是一样的，就像切点切面一样，在异步加载前后做一些操作，但是并不控制异步加载本身。</p>
+<h2 id="推荐一篇拓展文"><a href="#推荐一篇拓展文" class="headerlink" title="推荐一篇拓展文"></a>推荐一篇拓展文</h2><p><a href="https://blog.csdn.net/qq_36785111/article/details/78873488" target="_blank" rel="noopener">zTree异步加载时查询节点</a>。亲测可用。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/zTree/" rel="tag"># zTree</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/11/设置sitemap文件模板/" rel="next" title="设置sitemap文件模板">
+                <i class="fa fa-chevron-left"></i> 设置sitemap文件模板
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -316,8 +458,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -395,6 +546,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#重点在于-dataFilter"><span class="nav-number">1.</span> <span class="nav-text">重点在于 dataFilter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决办法"><span class="nav-number">2.</span> <span class="nav-text">解决办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zTree的异步加载"><span class="nav-number">3.</span> <span class="nav-text">zTree的异步加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐一篇拓展文"><span class="nav-number">4.</span> <span class="nav-text">推荐一篇拓展文</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
